@@ -22,3 +22,48 @@ time, mark, audio, video {
 }
 
 
+body{
+	font-family:Georgia, 'Times New Roman', Times, serif;
+	font-size: 1.3rem;
+	line-height: 1.6;
+	background-color:antiquewhite;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+  }
+  
+  img {
+	display: block;
+	width: 80%;
+	margin: 0 auto;
+	border: 1px solid black;
+  }
+
+  #main{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+  }
+
+  #main h1 {
+	font-weight: bold;
+	font-size: larger;
+	text-align: center;
+  }
+
+  #main h2 {
+	font-style: italic;
+	font-size: 100%;
+	width: 80%;
+	margin: 0 auto;
+  }
+
+  #img-div figcaption {
+	  font-size:small;
+	  width: 80%;
+	  margin: 0 auto;
+  }
+
