@@ -8,6 +8,7 @@
     
 </head>
 <body>
+    <div class="container">
     <header class="intro">
         <h1 id="title">Özer's Personal Website Survey Form</h1>
         <p id="description" >The more feedback we get, the better we will be.</p>
@@ -15,15 +16,20 @@
     </header>
     
     <form action="">
+        <div class="form-group" >
         <label for="fname">Name</label>
-        <input type="text" name="fname" id="fname" placeholder="Enter your name" required><br>
+        <input type="text" name="fname" id="fname" placeholder="Enter your name"  class="form-control" required><br>
+        <div class="form-group" >
         <label for="email">Email</label>
-        <input type="email" name="email" id="email" placeholder="Enter your Email" required ><br>
+        <input type="email" name="email" id="email" placeholder="Enter your Email" class="form-control" required ><br>
+        <div class="form-group" >
         <label for="age">Age (Optional)</label>
-        <input type="number" name="age" id="age" placeholder="Age" min="10" max="125"><br>
+        <input type="number" name="age" id="age" class="form-control" placeholder="Age" min="10" max="125"><br>
+        </div>
+        <div class="form-group">
         <label for="dropdown">Which option best describes your current role?</label><br>
         <select name="role" id="dropdown">
-            <option value="">--Select current role--</option>
+            <option disabled selected value>--Select current role--</option>
             <option value="Student">Student</option>
             <option value="Part-Time Job">Part-Time Job</option>
             <option value="Full-Time Job">Full-Time Job</option>
@@ -31,49 +37,54 @@
             <option value="Prefer not to say">Prefer not to say</option>
             <option value="Other">Other</option>
         </select>
-        <section id="radiobuttons-style">
+        </div>
+        <section id="radiobuttons-style" class="form-group">
             <p>Would you recommend ozerozturkk.wordpress.com to a friend?</p>
-            <input type="radio" name="answer" id="Definitely" value="Definitely">
+            <input type="radio" name="answer" id="Definitely" value="Definitely" class="input-radio">
             <label for="Definitely">Definitely</label><br>
-            <input type="radio" name="answer" id="Maybe" value="Maybe">
+            <input type="radio" name="answer" id="Maybe" value="Maybe" class="input-radio">
             <label for="Maybe">Maybe</label><br>
-            <input type="radio" name="answer" id="Not sure" value="Not sure">
+            <input type="radio" name="answer" id="Not sure" value="Not sure" class="input-radio">
             <label for="Not sure">Not sure</label><br>
         </section>
 
+        <div class="form-group">
         <label for="dropdown-2">what kind of articles do you interested in on my website?</label><br>
-        <select name="feature-select" id="dropdown-2">
-            <option value="">--Select an option--</option>
+        <select name="feature-select" id="dropdown-2" class="form-control">
+            <option disabled selected value>--Select an option--</option>
             <option value="Literature">Literature</option>
             <option value="Technological developments">Technological developments</option>
             <option value="Movie reviews">Movie reviews</option>
             <option value="Philosophical writings">Philosophical writings</option>
             <option value="In general">In general</option>
         </select>
+        </div>
 
-        <section id="checkbox-style" >
+        <section id="checkbox-style" class="form-group" >
             <p>What would you like to see improved? (Check all that apply)</p>
-            <input type="checkbox" id="item1" name="item1" value="Desing">
+            <input type="checkbox" id="item1" name="item1" value="Desing" class="input-checkbox">
             <label for="item1">Design of the pages</label><br>
-            <input type="checkbox" id="item2" name="item2" value="Web-dev articles">
+            <input type="checkbox" id="item2" name="item2" value="Web-dev articles" class="input-checkbox">
             <label for="item2">Web development articles</label><br>
-            <input type="checkbox" id="item3" name="item3" value="Advice">
+            <input type="checkbox" id="item3" name="item3" value="Advice" class="input-checkbox">
             <label for="item3">More Movie&Document advices</label><br>
-            <input type="checkbox" id="item4" name="item4" value="Local places">
+            <input type="checkbox" id="item4" name="item4" value="Local places" class="input-checkbox">
             <label for="item4">About local places</label><br>
-            <input type="checkbox" id="item5" name="item5" value="Engineering">
+            <input type="checkbox" id="item5" name="item5" value="Engineering" class="input-checkbox">
             <label for="item5">Engineering stuff</label><br>
-            <input type="checkbox" id="item6" name="item6" value="Photography">
+            <input type="checkbox" id="item6" name="item6" value="Photography" class="input-checkbox">
             <label for="item6">Photography</label><br><br>
         </section>
 
-        <section id="text-area">
+        <section id="text-area" class="form-group">
             <label for="text">Do you have some suggestions? Let me know.</label><br><br>
-            <textarea id="text" name="text" rows="5" cols="33" placeholder="Enter your comment here..."></textarea>
+            <textarea id="text" name="text" rows="5" cols="33" placeholder="Enter your comment here..." class="input-textarea"></textarea>
         </section><br>
 
-        <input id="submit" type="submit" value="Submit">
+        <div class="form-group" ></div>
+        <input id="submit" type="submit" value="Submit" class="submit-button">
 
     </form>
+    </div>
 </body>
 </html>
