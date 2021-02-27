@@ -49,6 +49,29 @@ table {
 
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 
-body{
+
+body {
     font-family: 'Josefin Sans', sans-serif;
-}
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-weight: 400;
+    background-image: url("../Survey Form/img/back.jpg");
+    background-position: center;
+    color:rgb(197, 199, 199);
+    margin: 0;
+  }
+
+  h1{
+      font-weight: 400;
+      line-height: 1.2;
+  }
+
+  p{
+      font-size:1.125rem;
+  }
+
+  h1, p {
+      margin-top:0;
+      margin-bottom:0.5rem;
+  }
+  
