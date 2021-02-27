@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <h1 id="title">Özer's Personal Website Survey Form</h1>
+    <p id="description" >We will get more beneficial by your feedback, thank you.</p>
+    <p id="visit">You can visit the Website<a href="https://ozerozturkk.wordpress.com/"> here</a>.</p>
+    <form action="">
+        <label for="fname">Name</label>
+        <input type="text" name="fname" id="fname" placeholder="Enter your name" required><br>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="Enter your Email" required ><br>
+        <label for="age">Age (Optional)</label>
+        <input type="number" name="age" id="age" placeholder="Age" min="10" max="125"><br>
+        <label for="dropdown">Which option best describes your current role?</label>
+        <select name="role" id="dropdown">
+            <option value="Select current role">Select current role</option>
+            <option value="Student">Student</option>
+            <option value="Part-Time Job">Part-Time Job</option>
+            <option value="Full-Time Job">Full-Time Job</option>
+            <option value="Full-Time Learner">Full-Time Learner</option>
+            <option value="Prefer not to say">Prefer not to say</option>
+            <option value="Other">Other</option>
+        </select>
+        <section id="radio-buttons">
+            <p>Would you recommend ozerozturkk.wordpress.com to a friend?</p>
+            <input type="radio" name="answer" id="Definitely" value="Definitely">
+            <label for="Definitely">Definitely</label><br>
+            <input type="radio" name="answer" id="Maybe" value="Maybe">
+            <label for="Maybe">Maybe</label><br>
+            <input type="radio" name="answer" id="Not sure" value="Not sure">
+            <label for="Not sure">Not sure</label><br>
+        </section>
+
+    </form>
+</body>
+</html>
