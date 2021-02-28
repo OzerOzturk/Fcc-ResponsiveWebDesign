@@ -57,9 +57,12 @@ body {
     font-weight: 400;
     background-image: url("../Survey Form/img/back.jpg") ;
     background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     color:rgb(255, 255, 255);
     margin: 0;
   }
+
 
   h1{
       font-weight: 400;
@@ -88,7 +91,7 @@ select,
 textarea {
   margin: 0;
   font-family: inherit;
-  font-size: inherit;
+  font-size: 1rem;
   line-height: inherit;
 }
   
@@ -113,11 +116,22 @@ button {
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
   }
 
+  #visit a {
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+  }
+
+  #visit a:hover {
+    color: rgb(104, 114, 128);
+    transition: ease-in;
+  }
+
 /* form */
 form {
-    background: rgb(41, 41, 80);
+    background: rgb(65, 65, 107);
     padding: 2.5rem 0.5rem;
     border-radius: 0.25rem;
+    opacity: 0.9;
   }
 
   .form-group{
@@ -145,10 +159,30 @@ form {
   }
 
 
+ .input-radio, .input-checkbox {
+    display: inline-block;
+    margin-right: 0.6rem;
+    min-height: 1.25rem;
+    min-width: 1.25rem;
+  } 
 
+  .input-textarea {
+    min-height: 120px;
+    width: 100%;
+    padding: 0.5rem;
+    resize: vertical;
+  }
 
-
-
+  .submit-button {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    background: rgb(56, 136, 56);
+    color: inherit;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+  
 
 
 /* Responsive */
