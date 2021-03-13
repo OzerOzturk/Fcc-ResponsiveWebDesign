@@ -8,10 +8,148 @@ body{
     font-family: 'Electrolize', sans-serif;
 }
 
+/* upper-section */
+
+.navbar{
+display: flex;
+align-items: center;
+}
+
+.logo-navbar{
+    margin: 20px 10px;
+}
+
+nav{
+    flex:1;
+    text-align: right;
+    margin-right: 5px;
+}
+
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right: 30px;
+    font-size:large;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
 
 
+.header-name{
+    text-align: center;
+    margin:10px;
+    padding: 10px;
+}
 
+.header-name h1{
+    padding: 10px;
+}
+
+.header-name input{
+padding: 5px;
+width: 230px;
+height: 30px;
+border: 1px solid #555;
+border-radius: 2px;
+}
+
+.header-name button{
+    padding: 5px;
+    margin: 5px;
+    color:rgb(18, 60, 175);
+    background-color: rgb(245, 245, 243);
+    transition: background 0.5s;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.header-name button:hover{
+    background-color: rgb(254, 255, 184);
+}
+
+/* main-section */
+
+
+.col{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.row-4{
+    min-width: 300px;
+    height: 100px;
+    justify-content: left;
+    text-align: left;
+}
+
+.row-4 i{
+    display: inline-block;
+    
+}
+
+.row-4 h3{
+    margin: 5px 0;
+    
+}
+
+.row-4 p{
+margin: 5px 0;
+}
+
+.row-4 iframe{
+    display: block;
+    margin-bottom: 20px;
+}
 
 .fab fa-superpowers{
-    font-size:  ;
+    font-size: 40px;
+    color:#ff523b;
 }
+
+
+
+
+
+
+
+
+
+/* bottom-section */
+.row-pricing{
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    font-size: 16px;
+}
+
+.row-pricing .col-3{
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+.row-pricing .col-3 h4{
+    background-color: rgb(209, 204, 204);
+    font-size: 20px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.row-pricing .col-3 p{
+    font-size: 13px;
+    text-align: center;
+    padding: 3px;
+}
+
