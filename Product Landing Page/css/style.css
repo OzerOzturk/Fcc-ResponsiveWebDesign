@@ -6,6 +6,8 @@
 
 body{
     font-family: 'Electrolize', sans-serif;
+    background: rgb(240,246,87);
+    background: linear-gradient(11deg, rgba(240,246,87,0.87718837535014) 0%, rgba(212,224,231,0.8603816526610644) 42%, rgba(0,212,255,1) 100%);
 }
 
 /* upper-section */
@@ -17,6 +19,7 @@ align-items: center;
 
 .logo-navbar{
     margin: 20px 10px;
+    filter: contrast(1.35);
 }
 
 nav{
@@ -78,64 +81,61 @@ border-radius: 2px;
 
 
 .col{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    margin: 15px 0;
+    margin-top: 30px;
+    width: 100%;
 }
 
 .row-4{
-    min-width: 300px;
-    height: 100px;
-    justify-content: left;
-    text-align: left;
+    display: flex;
 }
 
 .row-4 i{
-    display: inline-block;
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 125px;
+    color: rgb(47, 112, 197);
+    width: 40vw;
+    margin: 0 auto;
 }
 
-.row-4 h3{
-    margin: 5px 0;
-    
+.row-4 .desc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 125px;
+    font-size: larger;
+    width: 70vw;
 }
 
-.row-4 p{
-margin: 5px 0;
+@media (max-width: 800px) {
+    .row-4 .desc {
+      font-size: medium;
+    }
+  }
+
+
+.row-4 .video{
+    justify-content: center;
+    align-items: center;
+    width: 550px;
+    margin: 40px auto;
 }
-
-.row-4 iframe{
-    display: block;
-    margin-bottom: 20px;
-}
-
-.fab fa-superpowers{
-    font-size: 40px;
-    color:#ff523b;
-}
-
-
-
-
-
-
-
-
 
 /* bottom-section */
 .row-pricing{
     display: flex;
     flex-direction: row;
-    margin: 20px;
-    font-size: 16px;
+    margin: 30px;
+    font-size: 18px;
+    justify-content: center;
 }
 
 .row-pricing .col-3{
-    margin: 5px;
+    margin: 10px;
     border: 1px solid black;
     border-radius: 3px;
+    width: 275px;
 }
 
 .row-pricing .col-3 h4{
@@ -148,8 +148,46 @@ margin: 5px 0;
 }
 
 .row-pricing .col-3 p{
-    font-size: 13px;
+    font-size: 15px;
     text-align: center;
     padding: 3px;
 }
+
+.row-pricing .col-3 button{
+    font-size: 16px;
+    text-align: center;
+    padding: 5px;
+    margin: 60px 115px 20px 115px;
+    bottom: 5px;
+    text-transform: uppercase;
+    border: 1px solid black;
+    background-color: #d4e4fc;
+    border-radius: 4px;
+    transition: background 0.5s;
+}
+
+.row-pricing .col-3 button:hover{
+    background-color:#85a1ca;
+}
+
+/* privacy-terms-contact */
+footer{
+    background-color: rgb(204, 203, 203);
+    text-align: right;
+}
+
+footer ul {
+    display: inline-block;
+    padding: 5px;
+    text-align: right;
+}
+
+footer ul li {
+    display: inline-block;
+    padding: 5px;
+    margin: 5px 7px;
+    text-align: right;
+}
+
+
 
