@@ -9,8 +9,39 @@ body{
     line-height: 1.6;
     background-color: rgb(3, 47, 97);
     line-height: 1.5;
+    font-size: 1.5em;
+    scroll-behavior: smooth;
 }
 
+@media (max-width:800px){
+    body{
+        font-size:60%;
+    }
+}
+
+@media (max-width:550px){
+    body{
+        font-size:50%;
+    }
+}
+
+
+@media (max-width:350px){
+    body{
+        font-size:40%;
+    }
+}
+
+h1, h2, h3{
+text-align: center;
+}
+
+img{
+    display: block;
+    width: 100%;
+}
+
+/* navbar-section */
 
 nav{
     padding: 10px;
@@ -25,6 +56,7 @@ nav{
     font-size: 22px;
     width: 100%;
     border: 1px solid black;
+    box-shadow: 0 2px 0 rgba(0,0,0,0.5);
  
 }
 
@@ -41,6 +73,41 @@ nav li{
 nav li:hover{
     color:rgb(0, 13, 128)
 }
+
+@media (max-width: 800px){
+    nav{
+        font-size: 16px;
+        height: 75px;
+    }
+}
+
+/* welcome-section */
+.welcome{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(2, 46, 88);
+}
+
+.welcome > h1{
+    font-size:2em;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+}
+
+.welcome > h3{
+    font-size:1.2em;
+    font-weight: 200;
+    font-style: italic;
+    color: rgb(1, 161, 1);
+}
+
+
+/* project-section */
+
 
 .container{
     display: flex;
