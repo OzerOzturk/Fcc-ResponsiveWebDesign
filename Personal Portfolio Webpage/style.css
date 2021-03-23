@@ -6,4 +6,60 @@
 
 body{
     font-family: 'Marmelad', sans-serif;
+    line-height: 1.6;
+    background-color: rgb(3, 47, 97);
+    line-height: 1.5;
+}
+
+
+nav{
+    padding: 10px;
+    margin: 0px;
+    background-color: rgb(68, 112, 179);
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: flex-end;
+    right: 0;
+    height: 90px;
+    font-size: 22px;
+    width: 100%;
+    border: 1px solid black;
+ 
+}
+
+nav li{
+    list-style: none;
+    text-decoration: none;
+    color:white;
+    display: inline-block;
+    margin-right: 13px;
+    
+    
+}
+
+nav li:hover{
+    color:rgb(0, 13, 128)
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin:auto;
+    padding-left:25px;
+    padding-right:25px;
+}
+    
+
+.row-3{
+    flex-basis: 30%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom:50px; 
+}
+
+.cover figure{
+    width: 30px;
 }
